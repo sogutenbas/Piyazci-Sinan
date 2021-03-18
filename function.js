@@ -122,7 +122,7 @@ function enUzunSureDuran() {
         fishFarm.sort(function (h, s) {
             return s.durationInDays - h.durationInDays
         });
-        uzunSureDuranBalik.push(fishFarm[index].fishType + " " + fishFarm[index].durationInDays)
+        uzunSureDuranBalik.push(fishFarm[index].fishType + " " + fishFarm[index].durationInDays + " " + fishFarm[index].originCountry)
     };
     console.log("sirali")
     console.log(uzunSureDuranBalik[0])
@@ -131,7 +131,6 @@ function enUzunSureDuran() {
     console.log(uzunSureDuranBalik[3])
 };
 enUzunSureDuran()
-
 //9) Kis ve sonbahar sezonu icin swiss romande region'da satilan baliklarin ortalama fiyat:
 
 function satilanBaliklarinOrtalama() {
