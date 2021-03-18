@@ -51,7 +51,7 @@ function bulBerndeKisinSatilanBaliklari() {
     for (let index = 0; index < fishFarm.length; index++) {
         const element = fishFarm[index].season
         const element1 = fishFarm[index].saleLocations
-        if (season == "Winter" && saleLocations == "BE") {
+        if (fishFarm[index].season == "Winter" && fishFarm[index].saleLocations == "BE") {
             bulBerndeKisinSatilan.push(fishFarm[index].fishType)
         }
     };
