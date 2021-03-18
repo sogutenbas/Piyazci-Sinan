@@ -59,8 +59,8 @@ function bulBerndeKisinSatilanBaliklari() {
 };
 bulBerndeKisinSatilanBaliklari()
 
-
 //4) Son kullanma tarihlerine gore baliklarin siralanisi(Son kullanma tarihi yaklasan baliklar once gosterilmelidir):
+
 function tariheGoreSirala() {
     let siraliSonKullanmaTarihi = [];
     fishFarm.sort(function (h, s) {
@@ -75,6 +75,7 @@ function tariheGoreSirala() {
 tariheGoreSirala()
 
 //5) Avrupa Birligi'nden (AB) gelen ve fiyati 10Fr dan dusuk olan baliklari alfabetik siraya gore siralanisi:
+
 function alfabetikSirala() {
     let balikSirala = [];
 
@@ -131,8 +132,8 @@ function enUzunSureDuran() {
 };
 enUzunSureDuran()
 
-
 //9) Kis ve sonbahar sezonu icin swiss romande region'da satilan baliklarin ortalama fiyat:
+
 function satilanBaliklarinOrtalama() {
     let totalRegion = 0;
     let total = 0;
@@ -146,7 +147,6 @@ function satilanBaliklarinOrtalama() {
                 total = total + fishFarm[index].price;
                 totalRegion++;
             }
-
         }
     };
     console.log(total / totalRegion)
